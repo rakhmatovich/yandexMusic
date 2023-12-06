@@ -1,0 +1,91 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0 , 0, 0.06,);
+    padding: 0 30px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0px 15px ;
+    position: relative;
+}
+
+#il{
+    padding: 10px 10px ;
+    list-style: none;
+    position: relative;
+}
+
+.yandex{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    font-weight: 700;
+    line-height: 10px;
+}
+       
+
+#navbar li a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; 
+}
+
+#navbar li a:hover{
+        color: red; /* Меняем цвет текста */
+          
+}
+
+#il a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; 
+}
+
+#il a:hover{
+    color: black;
+}
+
+
+
+.yandex-logo{
+    width: 40px;
+}
+
+.poiskovik-logo{
+    margin-left: 30px;
+    width: 20px;
+}
+
+.l a{
+    color: grey;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.Sign{
+    border-radius: 7%;
+    border: none;
+    font-weight: 100;
+    font-size: medium;
+    background-color:gold;
+}

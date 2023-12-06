@@ -1,0 +1,69 @@
+footer {
+    padding: 20px ;
+}
+
+.slova{
+    gap: 25px;
+    list-style: none;
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0 , 0, 0.06,);
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.slova li a{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+.slova li a:hover{
+    color: red;
+}
+
+.padpiska{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0 , 0, 0.06,);
+    font-size: 0.9rem;
+}
+
+
+
+.padpiska li a{
+    color: black;
+    text-decoration: none;
+}
+
+.OOOyandex{
+    color: aliceblue;
+    margin-left: 270px;
+}
+
+.proekt{
+    margin-top: 10px;
+    margin-left:950px;
+    list-style:none;
+}
+
+.proekt a{
+    color: rgb(123, 118, 118);
+    text-decoration: none;
+}
+
+.sait{
+    margin-top: 20px;
+}
+
+.sait li a:hover{
+    color: rgb(97, 20, 169);
+}
+.footer_age{
+    margin-top: 10px;
+    margin-right:870px;
+    color: rgb(87, 90, 87);
+}
