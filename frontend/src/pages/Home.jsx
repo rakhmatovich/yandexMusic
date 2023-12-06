@@ -1,54 +1,34 @@
 import "../static/index.css";
 import Layout from "../components/Layout";
+import HomeTabs from "../components/HomeTabs";
+import InterestingNow from "../components/InterestingNow";
+import MusicCard from "../components/MusicCard";
+
+const podcastsBooks = [
+  { id: 1, url: '/images/viktor.jfif', name: 'Время «Спартака»', description: 'Хью Хауи. «Укрытие. Книга 1. Иллюзия»', like: 10 },
+  { id: 2, url: '/images/viktor.jfif', name: 'Время «Спартака»', description: 'Хью Хауи. «Укрытие. Книга 1. Иллюзия»', like: 10 },
+  { id: 3, url: '/images/viktor.jfif', name: 'Время «Спартака»', description: 'Хью Хауи. «Укрытие. Книга 1. Иллюзия»', like: 10 },
+  { id: 4, url: '/images/viktor.jfif', name: 'Время «Спартака»', description: 'Хью Хауи. «Укрытие. Книга 1. Иллюзия»', like: 10 },
+]
+
 function Home() {
   return (
     <Layout>
       <div className="home">
-        <div className="glavar">
-          <h1 className="glavnoe">Главное</h1>
-          <div id="Home-slova">
-            <div>
-              <a className="vse">ВСЁ</a>
-            </div>
-            <div>
-              <a href="">НОВЫЕ</a>
-            </div>
-            <div>
-              <a href="">РЕЛИЗЫ</a>
-            </div>
-            <div>
-              <a href=""> ПОДБОРКИ</a>
-            </div>
-            <div>
-              <a href="">НЕЙРОМУЗЫКА</a>
-            </div>
-          </div>
-        </div>
-        <div className="line" />
+        <HomeTabs />
         <h1 className="interesno">Интересно сейчас </h1>
-        <a className="imag" href="">
-          <div className="oblojka">
-            <img className="img-music" src="/images/cingl1.png" alt="" />
-            <h1 className="playlist">
-              <a>
-                сингл
-                <br />
-              </a>
-              Мрачный фонк от GAYAZOV$ BROTHER$
-              <p>Неожиданное переосмысление хита 00-х</p>
-            </h1>
-          </div>
-          <div className="oblojka">
-            <img className="img-music" src="/images/cingl.png" alt="" />
-            <h1 className="playlist2">
-              <a>
-                сингл <br />
-              </a>
-              Коллаборация Ramil' и Mary Gu
-              <p>Трагичная история токсичной любви</p>
-            </h1>
-          </div>
-        </a>
+        <div className="imag">
+          <InterestingNow
+            image={'/images/cingl1.png'}
+            heading={'сингл'}
+            title={'Мрачный фонк от GAYAZOV$ BROTHER$'}
+          />
+          <InterestingNow
+            image={'/images/cingl.png'}
+            heading={'сингл'}
+            title={"Коллаборация Ramil' и Mary Gu"}
+          />
+        </div>
 
         <div className="Knigi">
           <h1>Подкасты и книги</h1>
@@ -56,32 +36,15 @@ function Home() {
           <p>Слушайте не только музыку</p>
         </div>
         <div className="vse-knigi">
-          <a className="kartina-knigi" href="">
-            <img src="/images/spartak.jfif" alt="" />
-            <p className="spartak">Время «Спартака»</p>
-            <p className="vdok">
-              "Всё, что не вошло в док <br /> Кинопоиска: байки и <br /> скрытые
-              смыслы"
-            </p>
-          </a>
-
-          <a className="kartina-knigi" href="">
-            <img src="/images/viktor.jfif" alt="" />
-            <p>
-              Виктор Пелевин. <br /> «Путешествие в Элевсин»
-            </p>
-          </a>
-          <a className="kartina-knigi" href="">
-            <img src="/images/ted.png" alt="" />
-            <p>TED Лучшее</p>
-          </a>
-
-          <a className="kartina-knigi" href="">
-            <img src="/images/ukritie.jfif" alt="" />
-            <p>
-              Хью Хауи. «Укрытие. Книга <br /> 1. Иллюзия»
-            </p>
-          </a>
+          {podcastsBooks.map(pbItem => (
+            <MusicCard
+              key={pbItem.id}
+              url={pbItem.url}
+              name={pbItem.name}
+              description={pbItem.description}
+              like={pbItem.like}
+            />
+          ))}
         </div>
 
         <div className="Relizi">
@@ -152,26 +115,12 @@ function Home() {
               Искажённый звук, рваный ритм <br /> и много автотюна.
             </p>
           </a>
+        </div>
       </div>
-        </div>         
-        <div className="line" />
-          
+      <div className="line" />
+
     </Layout>
   );
 }
-
-
-
-/*
-      <div className="oblojka">
-          <a className="imag" href="">
-            <img className="img-music" src="./images/cingl1.png" alt="" /> 
-          </a>
-          <h1 className="singl"><a href="">сингл</a></h1>
-          <a className="imag" href="">
-            <img className="img-music" src="./images/cingl.png" alt="" /> 
-          </a>
-          </div>
-          <h1 className="singl"><a href="">сингл</a></h1> */
 
 export default Home;
