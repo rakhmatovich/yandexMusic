@@ -1,0 +1,44 @@
+.side-bar {
+    width: 30%;
+    padding: 10px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.sait-bar {
+    font-weight: 800;
+    font-size: 0.8rem;
+}
+
+.icons {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.icons svg:hover {
+    color: red;
+}
+
+.music-wraper {
+    padding: 10px 5px;
+}
+
+.music {
+    display: flex;
+}
+
+.music-number {
+    width: 20px;
+}
+
+.music-name {
+    font-weight: 700;
+}
+
+.music-time {
+    margin-left: auto;
+}

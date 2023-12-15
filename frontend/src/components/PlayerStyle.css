@@ -3,20 +3,71 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #fcf5f5;
-    padding: 50px 70px;
-}
-.player-btn-left a:hover{
-    color: black;
-}
-
-
-/* .voyti{
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 0px;
-    margin-left:180px;
-    font-weight: 520;
+    background-color: #eae5e5;
+    padding: 7px 70px;
     display: flex;
+    /* justify-content: space-between; */
+}
+
+
+
+.music-img{
+    width: 45px; 
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+.music {
+    display: flex;
+    gap: 10px;
+    align-items: center;
     font-size: 0.8rem;
-} */
+    margin-bottom: 13px;
+    
+}
+.music-text :hover{
+ color: red;
+ }
+
+.player-btn-left{
+    display: flex;
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #b7afaf;
+    margin-top: 10px;
+    margin-bottom: 13px;
+
+}
+.player-btn-left svg:hover{
+    color: rgb(21, 21, 21);
+}
+.like{
+    display: flex;
+    font-size: 1.3rem;
+    margin-top: 15px;
+    gap: 15px;
+    margin-left: 18px;
+    color: #b7afaf;
+    margin-bottom: 13px;
+
+}
+
+.like svg:hover{
+    color: rgb(21, 21, 21);
+}
+
+
+.player-btn-right{
+    display: flex;
+    gap: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #b7afaf;
+    margin-top: 16px;
+    font-size: 1.3rem;
+    padding-left: 710px;
+    }
+
+.player-btn-right svg:hover{
+    color: rgb(21, 21, 21);
+}
+

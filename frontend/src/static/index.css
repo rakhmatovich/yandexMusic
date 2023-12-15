@@ -5,7 +5,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.asalam {
+.flex {
+  display: flex;
+}
+.asalam{
   position: fixed;
 }
 /*nazarovanilufar
