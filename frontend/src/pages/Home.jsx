@@ -2,13 +2,30 @@ import "../static/index.css";
 import Layout from "../components/Layout";
 import HomeTabs from "../components/HomeTabs";
 import InterestingNow from "../components/InterestingNow";
+import { TbNumber18Small } from "react-icons/tb";
 import MusicCard from "../components/MusicCard";
 
 const podcastsBooks = [
-  { id: 1, url: '/images/viktor.jfif', name: 'Время «Спартака»', description: 'Хью Хауи. «Укрытие. Книга 1. Иллюзия»', like: 10 },
-  { id: 2, url: '/images/viktor.jfif', name: 'Время «Спартака»', description: 'Хью Хауи. «Укрытие. Книга 1. Иллюзия»', like: 10 },
-  { id: 3, url: '/images/viktor.jfif', name: 'Время «Спартака»', description: 'Хью Хауи. «Укрытие. Книга 1. Иллюзия»', like: 10 },
-  { id: 4, url: '/images/viktor.jfif', name: 'Время «Спартака»', description: 'Хью Хауи. «Укрытие. Книга 1. Иллюзия»', like: 10 },
+  { id: 1, url: '/images/spartak.jfif', name: 'Время «Спартака»', description: "Всё, что не вошло в док  Кинопоиска: байки и  скрытые смыслы", like: 10 },
+  { id: 2, url: '/images/viktor.jfif', name: 'Виктор Пелевин. «Путешествие в Элевсин»', description: '', like: 10 },
+  { id: 3, url: '/images/ted.png', name: 'TED Лучшее', description: '', like: 10 },
+  { id: 4, url: '/images/ukritie.jfif', name: 'Хью Хауи. «Укрытие. Книга  1. Иллюзия»', description: '', like: 10 },
+]
+
+const Newrelizs = [
+  { id: 1, url: '/images/varska.jfif', name: 'VARSKVA', description: 'Big Baby Tape', like: 10 },
+  { id: 2, url: '/images/60sek.jfif', name: '60 секунд до зимы ', description: 'Гио Пика Кравц', like: 10 },
+  { id: 3, url: '/images/puziri.jfif', name: 'МЫЛЬНЫЕ ПУЗЫРИ', description: 'алёна швец.', like: 10 },
+  { id: 4, url: '/images/foto na pamat.jfif', name: 'Фото на память ', description: 'ПИКЧИ!', like: 10 },
+
+]
+
+const Populars = [
+  { id: 1, url: '/images/gromknovink.png', name: 'Громкие новинки: рэп', description: 'На обложке: BUSHIDO ZHO  Мастера рифм и цепляющих битов', like: 10 },
+  { id: 2, url: '/images/gromknovink2.png', name: 'Громкие новинки: поп', description: 'На обложке: NILETTO  Треки, которые будут звучать повсюду', like: 10 },
+  { id: 3, url: '/images/za kadrom.png', name: 'За кадром', description: 'На обложке: FRIENDLY THUG 52 NGG Музыка из клипов. Плейлист, который смотрят!', like: 10 },
+  { id: 4, url: '/images/giperpop.png', name: 'Гиперпоп', description: 'На обложке: eikko  Искажённый звук, рваный ритм и много автотюна.', like: 10 },
+
 ]
 
 function Home() {
@@ -30,8 +47,9 @@ function Home() {
           />
         </div>
 
+
         <div className="Knigi">
-          <h1>Подкасты и книги</h1>
+          <h1>Подкасты и книги</h1> 
           <p></p>
           <p>Слушайте не только музыку</p>
         </div>
@@ -47,79 +65,47 @@ function Home() {
           ))}
         </div>
 
-        <div className="Relizi">
+        <div className="Knigi">
           <h1>Новые Релизы</h1>
+          <p></p>
           <p>Новые треки, альбомы и сборники</p>
         </div>
-        <div className="Relizi2">
-          <a className="kartina-knigi" href="">
-            <img src="/images/varska.jfif" alt="" />
-            <p>VARSKVA</p>
-            <p className="bigbaby">Big Baby Tape</p>
-          </a>
-
-          <a className="kartina-knigi" href="">
-            <img src="/images/60sek.jfif" alt="" />
-            <p>60 секунд до зимы </p>
-            <p className="gio">Гио Пика Кравц</p>
-          </a>
-          <a className="kartina-knigi" href="">
-            <img src="/images/puziri.jfif" alt="" />
-            <p>МЫЛЬНЫЕ ПУЗЫРИ</p>
-            <p className="alena">алёна швец.</p>
-          </a>
-
-          <a className="kartina-knigi" href="">
-            <img src="/images/foto na pamat.jfif" alt="" />
-            <p>Фото на память </p>
-            <p className="pikchi">ПИКЧИ!</p>
-          </a>
+        <div className="vse-knigi">
+          {Newrelizs.map(pbItem => (
+            <MusicCard
+              key={pbItem.id}
+              url={pbItem.url}
+              name={pbItem.name}
+              description={pbItem.description}
+              like={pbItem.like}
+            />
+          ))}
         </div>
-
-        <div className="popular">
+        <div className="Knigi">
           <h1>Популярные плейлисты</h1>
+          <p></p>
           <p>Собрано для вас нашей редакцией</p>
         </div>
-        <div className="popular2">
-          <a className="kartina-knigi" href="">
-            <img src="/images/gromknovink.png" alt="" />
-            <p>Громкие новинки: рэп</p>
-            <p className="rep">
-              На обложке: BUSHIDO ZHO <br />
-              Мастера рифм и цепляющих <br /> битов
-            </p>
-          </a>
-
-          <a className="kartina-knigi" href="">
-            <img src="/images/gromknovink2.png" alt="" />
-            <p>Громкие новинки: поп </p>
-            <p>
-              На обложке: NILETTO <br />
-              Треки, которые будут звучать <br /> повсюду
-            </p>
-          </a>
-          <a className="kartina-knigi" href="">
-            <img src="/images/za kadrom.png" alt="" />
-            <p>За кадром</p>
-            <p>
-              На обложке: FRIENDLY THUG 52 NGG <br />
-              Музыка из клипов. Плейлист, который смотрят!
-            </p>
-          </a>
-
-          <a className="kartina-knigi" href="">
-            <img src="/images/giperpop.png" alt="" />
-            <p>Гиперпоп</p>
-            <p>
-              На обложке: eikko <br />
-              Искажённый звук, рваный ритм <br /> и много автотюна.
-            </p>
-          </a>
+        <div className="vse-knigi">
+          {Populars.map(pbItem => (
+            <MusicCard
+              key={pbItem.id}
+              url={pbItem.url}
+              name={pbItem.name}
+              description={pbItem.description}
+              like={pbItem.like}
+            />
+          ))}
         </div>
+       
       </div>
+
+
+
       <div className="line" />
 
     </Layout>
+
   );
 }
 

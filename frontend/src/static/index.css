@@ -5,7 +5,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.asalam{
+.asalam {
   position: fixed;
 }
 /*nazarovanilufar
@@ -24,15 +24,23 @@ cristiano ronaldo №1
   border-bottom: 1px solid rgb(207, 206, 206);
 }
 
+.kartina-knigi img {
+  width: 100%;
+}
+
+.lane {
+  margin: 5px 0;
+  border-bottom: 1px solid rgb(207, 206, 206);
+}
+
 .uzb-music-img {
   margin-left: 40px;
   width: 450px;
   height: 300px;
 }
 
-
 .glavnoe {
-  margin-top: 10%;
+  margin-top: 7%;
   margin-bottom: 3%;
   font-weight: 750;
   font-size: 40px;
@@ -40,6 +48,8 @@ cristiano ronaldo №1
 }
 
 .interesno {
+  margin-left: 10px;
+  margin-top: 30px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
 }
@@ -50,7 +60,7 @@ cristiano ronaldo №1
 .imag {
   color: black;
   text-decoration: none;
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
 }
 
@@ -81,6 +91,7 @@ cristiano ronaldo №1
 }
 
 .kartina-knigi {
+  width: 24%;
   color: black;
   text-decoration: none;
 }
@@ -88,6 +99,46 @@ cristiano ronaldo №1
 
 .Relizi2 {
   display: flex;
+}
+
+.vserisunki {
+  margin-top: 35px;
+}
+
+.piala {
+  margin-left: 68px;
+}
+
+.treki {
+  color: gray;
+  margin-left: 47px;
+  margin-top: 10px;
+}
+
+.risunki a {
+  color: black;
+  text-decoration: none;
+}
+
+.risunki {
+  margin-top: 10px;
+}
+
+.chartuz {
+  margin-top: 70px;
+}
+
+.Uz a {
+  color: black;
+  text-decoration: none;
+  margin-left: 47px;
+  font-size: 25px;
+  gap: 13px;
+  display: flex;
+}
+
+.Knigi p {
+  margin-top: 10px;
 }
 
 .Relizi p {
@@ -211,27 +262,27 @@ cristiano ronaldo №1
   color: red;
 }
 
-.kartina-knigi .vdok{
+.kartina-knigi .vdok {
   color: gray;
 }
 
-.kartina-knigi .bigbaby{
+.kartina-knigi .bigbaby {
   color: gray;
 }
 
-.kartina-knigi .gio{
+.kartina-knigi .gio {
   color: gray;
 }
 
-.kartina-knigi .alena{
+.kartina-knigi .alena {
   color: gray;
 }
 
-.kartina-knigi .pikchi{
+.kartina-knigi .pikchi {
   color: gray;
 }
 
-.spartak{
+.spartak {
   color: black;
 }
 

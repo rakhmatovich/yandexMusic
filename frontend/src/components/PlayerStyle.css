@@ -1,0 +1,22 @@
+.player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fcf5f5;
+    padding: 50px 70px;
+}
+.player-btn-left a:hover{
+    color: black;
+}
+
+
+/* .voyti{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0px;
+    margin-left:180px;
+    font-weight: 520;
+    display: flex;
+    font-size: 0.8rem;
+} */

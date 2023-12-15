@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function HomeTabs() {
     return (
@@ -7,23 +8,17 @@ export default function HomeTabs() {
                 <h1 className="glavnoe">Главное</h1>
                 <div id="Home-slova">
                     <div>
-                        <a className="vse">ВСЁ</a>
+                        <Link to='/' className="vse">ВСЁ</Link>
                     </div>
                     <div>
-                        <a href="">НОВЫЕ</a>
+                        <a href="">НОВЫЕ РЕЛИЗЫ</a>
                     </div>
                     <div>
-                        <a href="">РЕЛИЗЫ</a>
-                    </div>
-                    <div>
-                        <a href=""> ПОДБОРКИ</a>
-                    </div>
-                    <div>
-                        <a href="">НЕЙРОМУЗЫКА</a>
+                        <Link to="/CHART">ЧАРТ</Link>
                     </div>
                 </div>
             </div>
-            <div className="line" />
+            <div className="lane" />
         </>
     )
 }

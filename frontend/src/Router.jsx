@@ -1,6 +1,9 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Login from './pages/Login'
+import Podcats from './pages/Podcats'
+import ChartUz from './components/ChartUz'
+import Detyam from './components/Detyam'
 
 export default function Router() {
     return (
@@ -8,6 +11,9 @@ export default function Router() {
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/login' element={<Login />} />
+                <Route path='/podcast' element={<Podcats/>} />
+                <Route path='/chart' element={<ChartUz/>} />
+                <Route path='/detyam' element={<Detyam/>} />
             </Routes>
         </BrowserRouter>
     )

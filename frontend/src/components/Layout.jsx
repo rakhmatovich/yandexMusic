@@ -1,3 +1,4 @@
+import Podcats from "../pages/Podcats";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 

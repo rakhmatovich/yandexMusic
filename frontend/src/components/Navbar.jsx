@@ -13,17 +13,13 @@ function Navbar() {
             <Link to="/">Главное</Link>
           </li>
           <li>
-            <Link to="/">Подкасты и книги </Link>
+            <Link to="/podcast">Подкасты и книги</Link>
           </li>
           <li>
-            <Link to="/">Детям</Link>
+            <Link to="/detyam">Детям</Link>
             <img className="poiskovik-logo" src="/images/poisk.png" alt="" />
           </li>
         </ul>
-        <li id="il">
-          <Link to="/">Активировать промокод</Link>{" "}
-          <img className="promokod" src="/images/bilet.svg" alt="" />
-        </li>
         <button className="Sign">
           <li id="il">
             <Link to="/login">Войти</Link>
@@ -36,3 +32,9 @@ function Navbar() {
 }
 
 export default Navbar;
+
+
+// <li id="il">
+//           <Link to="/">Активировать промокод</Link>{" "}
+//           <img className="promokod" src="/images/bilet.svg" alt="" />
+//         </li>
